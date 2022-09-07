@@ -11,3 +11,17 @@
 2022-09-07 19:43:27.531  INFO 9440 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2022-09-07 19:43:28.000  INFO 9440 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2022-09-07 19:43:28.014  INFO 9440 --- [main] c.l.m.MybatisSpringbootApplication       : Started MybatisSpringbootApplication in 5.423 seconds (JVM running for 7.359)
+2022-09-07 20:30:59.457  INFO 9440 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-07 20:30:59.464  INFO 9440 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-09-07 20:30:59.471  INFO 9440 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-09-07 20:53:31.178  INFO 9176 --- [main] c.l.m.MybatisSpringbootApplication       : Starting MybatisSpringbootApplication on 李可 with PID 9176 (C:\Users\28752\Desktop\桌面办公文件夹\mybatis_springboot\target\classes started by 28752 in C:\Users\28752\Desktop\桌面办公文件夹\mybatis_springboot)
+2022-09-07 20:53:31.184  INFO 9176 --- [main] c.l.m.MybatisSpringbootApplication       : No active profile set, falling back to default profiles: default
+2022-09-07 20:53:32.805  INFO 9176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-09-07 20:53:32.827  INFO 9176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-07 20:53:32.828  INFO 9176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-09-07 20:53:32.947  INFO 9176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-07 20:53:32.947  INFO 9176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1664 ms
+2022-09-07 20:53:33.051  INFO 9176 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-09-07 20:53:33.178  INFO 9176 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-09-07 20:53:33.531  INFO 9176 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-07 20:53:33.612  INFO 9176 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
