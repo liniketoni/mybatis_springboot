@@ -1,0 +1,13 @@
+2022-09-07 19:43:23.593  INFO 9440 --- [main] c.l.m.MybatisSpringbootApplication       : Starting MybatisSpringbootApplication on 李可 with PID 9440 (C:\Users\28752\Desktop\桌面办公文件夹\mybatis_springboot\target\classes started by 28752 in C:\Users\28752\Desktop\桌面办公文件夹\mybatis_springboot)
+2022-09-07 19:43:23.605  INFO 9440 --- [main] c.l.m.MybatisSpringbootApplication       : No active profile set, falling back to default profiles: default
+2022-09-07 19:43:26.409  INFO 9440 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-09-07 19:43:26.458  INFO 9440 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-07 19:43:26.459  INFO 9440 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-09-07 19:43:26.680  INFO 9440 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-07 19:43:26.681  INFO 9440 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2970 ms
+2022-09-07 19:43:26.826  INFO 9440 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-09-07 19:43:27.008  INFO 9440 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-09-07 19:43:27.454  INFO 9440 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-07 19:43:27.531  INFO 9440 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-09-07 19:43:28.000  INFO 9440 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-09-07 19:43:28.014  INFO 9440 --- [main] c.l.m.MybatisSpringbootApplication       : Started MybatisSpringbootApplication in 5.423 seconds (JVM running for 7.359)

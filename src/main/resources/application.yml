@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/db_idshow?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  type-aliases-package: mybatis_springboot.pojo
+  mapper-locations: classpath:/mybatis/*.xml
+logging:
+  file:
+    name: log/log.log
+  level:
+    root: info
+    mybatis_springboot: debug
