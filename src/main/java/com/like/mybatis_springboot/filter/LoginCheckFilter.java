@@ -38,7 +38,7 @@ public class LoginCheckFilter implements Filter {
             return;
         }
         //4,判断登录状态如果已登录，直接放行
-        System.out.println(request.getSession().getAttribute("User"));
+        System.out.println("41"+request.getSession().getAttribute("User"));
        if (request.getSession().getAttribute("User")!=null){
            chain.doFilter(request,response);
            return;

@@ -13,7 +13,7 @@ import java.util.List;
 
 @Mapper
 @Repository
-public interface UserDao {
+public interface UserDao  {
     //账号查询
     public List<User> listUser();
 
@@ -22,4 +22,7 @@ public interface UserDao {
 
     //查询用户
     public User UserSelect(@Param("user_id") String user_id);
+
+    //修改用户信息
+    public void  UpUserInfo( User user);
 }

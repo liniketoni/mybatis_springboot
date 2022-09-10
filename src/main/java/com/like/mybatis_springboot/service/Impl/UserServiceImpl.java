@@ -32,4 +32,9 @@ public class UserServiceImpl implements UserService {
     public User UserSelect(String user_id) {
         return userDao.UserSelect(user_id);
     }
+
+    @Override
+    public void  UpUserInfo(User user) {
+         userDao.UpUserInfo(user);
+    }
 }

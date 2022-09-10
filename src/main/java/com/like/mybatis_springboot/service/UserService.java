@@ -14,4 +14,7 @@ public interface UserService {
 
     //账号查询
     public User UserSelect(String user_id);
+
+    //修改用户信息
+    public void  UpUserInfo(User user);
 }

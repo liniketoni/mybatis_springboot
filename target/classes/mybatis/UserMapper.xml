@@ -26,4 +26,19 @@
             </if>
         </where>
     </select>
+    <update id="UpUserInfo" parameterType="com.like.mybatis_springboot.pojo.User">
+        update db_idshow.user
+        <set >
+            <if test="user_Avatar != null">
+                user_Avatar = #{user_Avatar},
+            </if>
+            <if test="user_phone != null">
+                user_phone = #{user_phone},
+            </if>
+            <if test="user_name != null">
+                user_name = #{user_name},
+            </if>
+        </set>
+        where user_id = #{user_id}
+    </update>
 </mapper>
