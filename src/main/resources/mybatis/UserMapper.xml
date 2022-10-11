@@ -38,7 +38,16 @@
             <if test="user_name != null">
                 user_name = #{user_name},
             </if>
+            <if test="u_update != null">
+                u_update = #{u_update},
+            </if>
         </set>
         where user_id = #{user_id}
     </update>
+    <insert id="Useradd" parameterType="com.like.mybatis_springboot.pojo.User">
+        insert into  db_idshow.user
+            (password,user_id,user_phon,user_state,u_update,u_createdate,admin ,user_Avatar,user_name,admin_root)
+             values
+            (#{password},#{user_id},#{user_state},#{u_update},#{u_createdate},#{admin},#{user_Avatar},#{user_name},#{admin_root})
+    </insert>
 </mapper>

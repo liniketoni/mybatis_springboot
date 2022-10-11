@@ -10,27 +10,10 @@ Target Server Type    : MYSQL
 Target Server Version : 80019
 File Encoding         : 65001
 
-Date: 2022-09-07 21:45:23
+Date: 2022-10-11 15:29:15
 */
 
 SET FOREIGN_KEY_CHECKS=0;
-
--- ----------------------------
--- Table structure for admin
--- ----------------------------
-DROP TABLE IF EXISTS `admin`;
-CREATE TABLE `admin` (
-  `password` varchar(42) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `admin_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `admin_root` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  PRIMARY KEY (`admin_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
--- ----------------------------
--- Records of admin
--- ----------------------------
-INSERT INTO `admin` VALUES ('202cb962ac59075b964b07152d234b70', '2875244502', 'root_2');
-INSERT INTO `admin` VALUES ('202cb962ac59075b964b07152d234b70', '985355343', 'root_1');
 
 -- ----------------------------
 -- Table structure for ca_number
@@ -134,18 +117,22 @@ CREATE TABLE `trade` (
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
-  `User_no` int NOT NULL,
+  `User_no` int NOT NULL AUTO_INCREMENT,
   `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `user_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `user_phone` varchar(255) NOT NULL,
   `user_state` int NOT NULL,
   `u_update` datetime DEFAULT NULL,
   `u_createdate` datetime NOT NULL,
+  `admin` tinyint(1) NOT NULL,
+  `user_Avatar` varchar(255) NOT NULL,
+  `user_name` varchar(255) NOT NULL,
+  `admin_root` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   PRIMARY KEY (`User_no`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', '202cb962ac59075b964b07152d234b70', '2875244502', '18696003593', '1', '2022-08-17 19:55:08', '2022-08-17 19:55:00');
-INSERT INTO `user` VALUES ('2', '202cb962ac59075b964b07152d234b70', '985355343', '18696003593', '1', null, '2022-08-17 19:58:13');
+INSERT INTO `user` VALUES ('1', '202cb962ac59075b964b07152d234b70', '2875244502', '18696003593', '1', '2022-08-17 19:55:08', '2022-08-17 19:55:00', '0', '', '李可', '');
+INSERT INTO `user` VALUES ('2', '202cb962ac59075b964b07152d234b70', '985355343', '18696003593', '1', '2022-10-05 18:30:43', '2022-08-17 19:58:13', '0', 'D:\\image\\img\\2022-10-05\\942f42cd-cff9-43e6-86e1-06c0bbdeb388.jpeg', 'like', '管理员');

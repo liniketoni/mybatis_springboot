@@ -37,4 +37,9 @@ public class UserServiceImpl implements UserService {
     public void  UpUserInfo(User user) {
          userDao.UpUserInfo(user);
     }
+
+    @Override
+    public void Useradd(User user) {
+        userDao.Useradd(user);
+    }
 }

@@ -27,7 +27,8 @@ public class LoginCheckFilter implements Filter {
         String requestURL=request.getRequestURI();
         //定义不需要处理的请求路径
         String [] urls=new String[]{
-                "/user/login"
+                "/user/login",
+                "/user/UpUser"
         };
         //2,判断本次是否需要处理
         boolean check =check(urls,requestURL);

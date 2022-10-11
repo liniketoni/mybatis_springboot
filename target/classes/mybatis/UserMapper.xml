@@ -38,6 +38,9 @@
             <if test="user_name != null">
                 user_name = #{user_name},
             </if>
+            <if test="u_update != null">
+                u_update = #{u_update},
+            </if>
         </set>
         where user_id = #{user_id}
     </update>

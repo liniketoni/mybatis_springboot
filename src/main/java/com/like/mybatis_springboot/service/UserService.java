@@ -17,4 +17,7 @@ public interface UserService {
 
     //修改用户信息
     public void  UpUserInfo(User user);
+
+    //用户注册
+    public void Useradd(User user);
 }
